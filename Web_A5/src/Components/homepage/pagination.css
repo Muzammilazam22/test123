@@ -1,0 +1,25 @@
+.form-inline {
+  display: flex;
+}
+
+.search-btn {
+  margin: 0rem 1rem;
+  background-color: #ed7826 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.search-btn:hover {
+  margin: 0rem 1rem;
+  background-color: #a5a5a5 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+.custom-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.custom-icon:hover {
+  color: #a5a5a5 !important;
+  cursor: pointer;
+}

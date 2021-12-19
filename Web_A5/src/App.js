@@ -1,24 +1,25 @@
-import "./App.css";
-import Homepage from "./Components/homepage/Homepage";
-import Login from "./Components/login/Login";
-import Register from "./Components/register/Register";
-import Myposts from "./Components/posts/myposts";
-import Editpost from "./Components/post/editpost";
+import './App.css';
+import Homepage from './Components/homepage/Homepage';
+import Login from './Components/login/Login';
+import Register from './Components/register/Register';
+import Myposts from './Components/posts/myposts';
+import Editpost from './Components/post/editpost';
+import Profile from './Components/profile/Profile';
 
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 function App() {
-
   return (
     <Router>
       <Switch>
-          <Route exact path='/' component={Homepage} />
-          <Route path='/login' component={Login} />
-          <Route path='/register' component={Register} />
-          <Route path='/myposts' component={Myposts} />
-          {/* <Route path='/myposts/edit/:postid' component={Homepage} /> */}
-          <Route path="/post/edit/:postId" component={Editpost} />
+        <Route exact path='/' component={Homepage} />
+        <Route path='/login' component={Login} />
+        <Route path='/register' component={Register} />
+        <Route path='/myposts' component={Myposts} />
+        {/* <Route path='/myposts/edit/:postid' component={Homepage} /> */}
+        <Route path='/profile' component={Profile} />
+        <Route path='/post/edit/:postId' component={Editpost} />
       </Switch>
-  </Router>
+    </Router>
   );
 }
 
