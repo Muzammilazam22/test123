@@ -1,0 +1,13 @@
+.user-form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.custom-card {
+  margin: 1.5rem;
+  display: flex;
+}
+.custom-card-body {
+  display: flex;
+  width: 110%;
+}
